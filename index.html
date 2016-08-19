@@ -1,0 +1,180 @@
+---
+layout: default
+title: {{ site.name }}
+---
+
+<h1>Project Abstract</h1>
+<p>
+<a href="https://issues.apache.org/jira/browse/ZEPPELIN-683"> Jira issue for project</a></br>
+Zeppelin has implementations for storing notebook in local filesystem, local Git repository, S3 and Azure. The idea of this project is to add storage using P2P protocols like IPFS, dat , Zeronet or Bittorrent. Hence supporting versioning and allowing users to share their notebooks easily.
+</p>
+<a href="https://github.com/apache/zeppelin/pulls/onkarshedge" class="btn" id="Bodybtn">Pull requests</a>
+<a href="https://gsoc2016onkar.blogspot.in/" class="btn" id="Bodybtn">My blog</a>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/time.css">
+<div class="container">
+   <!-- <div class="page-header">
+        
+    </div> -->
+<h1>Timeline</h1>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Application period</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time">March 15 - March 26</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Organizations were announced and I choose this project because it seemed interesting and curiosity of how P2P protocols work. To get comforatable with zeppelin, and understand the project. I
+		<ul>
+		<li>Created sample <a href="https://github.com/onkarshedge/sample-notebooks" target="_blank">notebooks</a></li>
+		<li>Read bittorent specification and wrote a <a href="http://onkarshedge.github.io/2016/03/16/peeking-in-p2p.html" 			target="_blank">blog</a></li>
+		<li> Wrote a <a href="https://docs.google.com/document/d/1GVu_LEi8o6wnnoj9vrt07j8ByiDCLemYh9F9ERLyni8/edit?usp=sharing" target="_blank">proposal</a></li>
+	        </ul>
+		</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Community bonding</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">April 23 - May 16</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Initially I was trying AngularJS as I was unfamiliar with it.</p>
+		<p>Zeppelin notes are stored as note.json. The goal was to get familiar with the source code as much as possible. My mentor 			gave me the task to store notebooks in XML format. More details <a href="http://gsoc2016onkar.blogspot.in/2016/04/week-1.html" 			target="_blank">here</a></p>
+		Also maven basic functionality.
+            </div>
+          </div>
+        </li>
+	<li class="timeline-inverted">
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Final Semester exams</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">May 16 - May 27</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Focus on academics.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Comparison of protocols</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">May 27 - June 7</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Read the P2P protocols IPFS, Dat, Zeronet for a comparative study to see which protocol best fits and the software stack available(libraries etc.) </p>
+	     <p>Chose IPFS to start with. Read the original paper. Tried all commands in command line tool. Wrote about merkle DAG and ipfs object in second post <a href="http://gsoc2016onkar.blogspot.in/2016/06/ipfs.html" target="_blank">here</a>
+	    </p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+	<div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Submitted First PR</h4>
+	     <p><small class="text-muted"><i class="glyphicon glyphicon-time">June 10</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Submitted the PR containing save, list, get methods</p>
+            </div>
+          </div>
+        </li>
+	<li class="timeline-inverted">
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Ipfs with versioning</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">June 15 - June 22</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>implemented NotebookRepoVersioned interface for storing and getting revisions.</p>
+	      <p>Wrote some google docs for description of design and what ipfs features were used</p>
+		<ul>
+	      	<li><a href="https://docs.google.com/document/d/1eYjQL0t7VlBTRMYoA0nWRJAnZ6RHUF7S7G3rx9xH5Pc/edit?usp=sharing" 			target="_blank">Document one</a></li>
+		<li><a href="https://docs.google.com/document/d/1OZOowc6aX3BrRkgjkUKwD19DshNXMWE2M07LMpXepx4/edit?usp=sharing" 			target="_blank">Document two</a></li>
+		</ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Ipfs asynchronous callbacks</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">June 23 - June 28</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Read and worked on</p>
+		<ul>
+	      	<li>Websocket Jetty's own and JSR-356 both are quite similar.</li>
+		<li>Concurrency : Callable, Runnable, Executors , google-guava for callbacks</li>
+		<li> To handle many ipfs download tasks at once and send message to the front-end when complete or about progress.
+		</ul>
+              <hr>
+	      <a href="http://gsoc2016onkar.blogspot.in/2016/06/communication-websocket-and-concurrency.html" 				   			target="_blank">More Info </a></br>
+	      But this was scrapped later.		
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Bittorrent</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">July 5 - July 15</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Worked with jlibtorrent library. Created some examples and used the reference documentation of libtorrent.
+	      <a href="https://drive.google.com/drive/folders/0Bwg4NhDtfdM9OHhTbm5HWFlCa0E?usp=sharing" target="_blank"> Code</a></p>
+	      <p>Asked for <a href="https://github.com/frostwire/frostwire-jlibtorrent/issues?q=is%3Aissue+author%3Aonkarshedge+is%3Aclosed" target="_blank">issues</a> on jlibtorrent page</p>
+            </div>
+          </div>
+        </li>
+	<li class="timeline-inverted">
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">BittorrentNotebookRepo</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">July 17 - July 27</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Created BittorentNotebookRepo and sent a PR</p>
+		<p>In my design I considered BittorentNotebookRepo with separate communication servlet other than NotebookServer handling Bittorrent specific 			messages like download add, progress, peersalert etc.</p>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">August 1 - August 14</i></small></p>
+		<p>Created some diagrams to explain my architecture. Design was refactored to use DHT mutable and immutable store. So read the bep44 specs and 			tried some sample <a href="https://gist.github.com/onkarshedge/796ca7fe0698952ffef92690eec0dd40" target="_blank">code</a>, realized data storage 			limit is 1000 bytes.</p>
+            </div>
+          </div>
+        </li>
+	<li>
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Ipfs import feature</h4>
+		<p><small class="text-muted"><i class="glyphicon glyphicon-time">August 15 - August 17</i></small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Worked on ipfs import, added import url option, server to client message of import status and ng-toast.
+	     </p>
+	     <p><small class="text-muted"><i class="glyphicon glyphicon-time">August 18 - August 20</i></small></p>
+	     <p>Created this site as final work submission</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+<!--
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+-->

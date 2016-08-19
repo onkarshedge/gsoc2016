@@ -1,0 +1,17 @@
+# Setup
+title:        Google Summer of Code-2016
+tagline:      Apache Zeppelin
+baseurl:      ""
+paginate:     1
+
+# About/contact
+author:
+  name:       Onkar Shedge
+  url:        https://github.com/onkarshedge
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
